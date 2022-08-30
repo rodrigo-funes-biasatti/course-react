@@ -2,7 +2,7 @@ import "./Expenses.css"
 import ExpenseItem from "./ExpenseItem";
 import Card from "../GeneralComponents/Card";
 
-function Expenses (props) {
+const Expenses = (props) => {
     const expenses = props.expenses;
     return (
         <Card className="expenses">{expenses.map(expense => <ExpenseItem title={expense.title} amount={expense.amount} date={expense.date} />)}</Card>
